@@ -4,26 +4,38 @@
 <head>
 	<title>My First Website</title>
 	<style type="text/css">
-	    html{ margin-left: 250px;
-	    	margin-right: 250px;
+	    html { 
+	    	margin: auto;
 	    	background-color: grey;
+	    	max-width: 750px;
 
 	    }
-		div { border: solid;
-			  border-color: white;
-			  text-align: center;
-			  padding: 30px;
 
-
+		.quote-container , .quote-container-2 , .container-2 { 
+			border: solid;
+			border-color: white;
+			text-align: center;
+			
 		}
-		#q2{
+
+		.quote-container-2, .container-2 {
 			margin-top: 20px;
 		}
+		.lab-2 {
+			margin-top: 20px;
+		}
+
 	</style>
 </head>
+
 <body>
+
+<div class="container">
+
     <h1>My First Website</h1>
+    
     <p>Welcome to my website! Here are some things I enjoy.</p>
+    
     <ul>
     	<li> Web Development</li>
     	<li> Chess</li>
@@ -32,9 +44,45 @@
     </ul>
 
     <h2>Favorite Quotes </h2>
-    <div> Here is a favorite quote of mine... </div>
+
+    <div class="quote-container">
+     <p> Here is a favorite quote of mine... </p>
+     </div>
     
-    <div id="q2"> ...and another </div>
+    <div class="quote-container-2">
+    <p> ...and another</p> 
+    </div>
+  
+  <div class="container-2">
+        <form>
+			<h3>Enter two numbers:</h3>
+			<div class="lab-1">
+			    <label for="x">x:</label>
+			    <input type="number" name="number-x" id="X" placeholder="Please insert x"/>
+			</div>
+
+			<div class="lab-2">
+			   <label for="y">y:</label>
+			   <input type="number" name="number-b" id="Y" placeholder="Please insert y"/>
+			</div>
+
+			<input type="submit" id="submit" value="Sum" onclick="Sum()" />
+		</form>
+
+		<p id="res">The sum is </p>
+  </div>
+
+</div>
+
+	<script>
+		function Sum(){
+			var x, y, result
+			x = parseInt(document.getElementById('X').value, 10);
+			y = parseInt(document.getElementById('Y').value, 10);
+			result = (x + y);
+			document.getElementById('res').innerHTML = result;
+		}
+	</script>
 
 </body>
 </html>
