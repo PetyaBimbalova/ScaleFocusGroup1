@@ -22,7 +22,7 @@
 			margin-top: 20px;
 		}
 		.lab-2 {
-			margin-top: 20px;
+			margin-top: 10px;
 		}
 
 	</style>
@@ -58,18 +58,17 @@
 			<h3>Enter two numbers:</h3>
 			<div class="lab-1">
 			    <label for="x">x:</label>
-			    <input type="number" name="number-x" id="X" placeholder="Please insert x"/>
+			    <input type="number" name="number-x" id="X" placeholder="Please write x"/>
 			</div>
 
 			<div class="lab-2">
 			   <label for="y">y:</label>
-			   <input type="number" name="number-b" id="Y" placeholder="Please insert y"/>
+			   <input type="number" name="number-b" id="Y" placeholder="Please write y"/>
 			</div>
 
-			<input type="submit" id="submit" value="Sum" onclick="Sum()" />
+			<input type="submit" id="submit" value="Sum" onclick="Sum()"  />
 		</form>
-
-		<p id="res">The sum is </p>
+      <p id="res"> The sum is = </p>
   </div>
 
 </div>
@@ -82,6 +81,8 @@
 			result = (x + y);
 			document.getElementById('res').innerHTML = result;
 		}
+
+		
 	</script>
 
 </body>
