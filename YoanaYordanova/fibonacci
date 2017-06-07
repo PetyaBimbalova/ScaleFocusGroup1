@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonacci</title>
+</head>
+<body>
 
+	<script>
+		var sumF = 0;
+		var fib = [];
+
+		fib[0] = 0;
+		fib[1] = 1;
+		for (var i = 2; i < 400000; i++){
+			fib[i] = fib[i-2] + fib[i-1];
+			sumF += fib[i];
+			
+		}
+
+		console.log(fib);
+		console.log(sumF);
+
+	</script>
+</body>
+</html>
