@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+	
+
+var evinNum = [0,1];
+var i = 0;
+var sum = 0;
+while (evinNum[0]+evinNum[1] < 4000000){
+
+    i= evinNum[0]+evinNum[1];
+    evinNum[0]=evinNum[1];
+    evinNum[1]=i;
+
+        if(i%2 == 0){
+
+        sum += i;
+    }
+}
+console.log(sum);
+
+</script>
+
+</body>
+</html>
