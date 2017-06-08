@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My First Homework</title>
+
+<style type="text/css">
+	body {
+		background-color: grey; 
+	}
+
+	#wrapper{
+		width: 1020px;
+		margin: 0 auto;
+		}
+
+	.quote{
+		width: 100%; 
+		background: grey; 
+		padding: 5px 5px;
+		text-align: center;
+		border: 2px solid white;
+		margin-bottom: 20px;
+	}
+
+</style>
+
+</head>
+
+<body>
+<div id="wrapper">
+<h1>My First Website</h1>
+
+<p>Welcome to my website. Here are somethings I enjoy.</p>
+
+	
+	<ul>
+		<li>Web Development</li>
+		<li>Chess</li>
+		<li>Reading</li>
+		<li>Learning</li>
+	</ul>
+
+
+<h1>Favorite Quotes</h1>
+
+<div class="quote">
+			<p>Here is a favorite quote of mine...</p>
+		</div>
+		<div class="quote">
+			<p>... and another.</p>
+		</div>
+<form>
+			<h3>Enter two numbers:</h3>
+			<label for="A">a:</label>
+			<input type="number" name="letter-a" id="A" placeholder="Enter A..."/>
+			<br>
+			<label for="B">b:</label>
+			<input type="number" name="letter-b" id="B" placeholder="Enter B..."/>
+			<br>
+			<input type="button" id="submit" value="Solution" onclick="solution()" />
+
+		</form>
+		<p id="demo">Result -> </p>
+	
+</div>
+
+<script>
+		function solution(){
+			var a, b, result
+			a = parseInt(document.getElementById('A').value, 10);
+			b = parseInt(document.getElementById('B').value, 10);
+			result = (a + b);
+			document.getElementById('demo').innerHTML = " Result -> " + result;
+		}
+	</script>
+
+</body>
+</html>
