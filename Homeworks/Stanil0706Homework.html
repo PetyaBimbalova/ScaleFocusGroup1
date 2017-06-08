@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+	<title>Homework</title>
+</head>
+<body>
+<h1>Open console to display results</h1>
+<script type="text/javascript">
+var mil;
+	function SumFib(mil){
+		var  sum=0, a=0 ,b=1, t;
+		while (b < mil){
+			
+			t = a;
+			a = b;
+			b += t;
+			if (b%2 === 0) {
+				sum+=b;
+			}
+			
+		}
+		return sum;
+	}
+		console.log(SumFib(4000000));
+
+	
+</script>
+
+</body>
+</html>
